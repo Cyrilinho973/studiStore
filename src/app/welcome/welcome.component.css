@@ -1,0 +1,16 @@
+.welcomeText {
+  margin-left: 250px;
+  height:40px;
+  padding: 30px;
+}
+
+.welcomeLogo {
+  float: left;
+  height: 100px;
+  margin-left: 30px;
+}
+
+.welcomeMenu {
+  margin-top: 10px;
+  margin-left: 20px;
+}
