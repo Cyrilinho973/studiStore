@@ -8,6 +8,7 @@ import { ProductsModule } from './products/products.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     ProductsModule,
     BrowserAnimationsModule,
     MatTabsModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
