@@ -8,10 +8,12 @@ import { products } from './products.list';
 })
 export class ProductsListComponent {
   productsList: any
-  displayedColumns: string[] = ['name', 'img', 'description', 'age', 'price', 'partNumber']
+  displayedColumns: string[] = ['name', 'img', 'description', 'age', 'price', 'partNumber', 'details']
   
   cutDescription(description: string) {
-    return description.substring(0, 100)
+    let modifiedDescription = description.substring(0, 27)
+    modifiedDescription += '...'
+    return modifiedDescription
   }
 
   getProducts() {
