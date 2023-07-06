@@ -7,7 +7,21 @@ import { products } from './products.list';
   styleUrls: ['./products-list.component.css'],
 })
 export class ProductsListComponent {
-  productsList = products
+  productsList: any
   displayedColumns: string[] = ['name', 'img', 'description', 'age', 'price', 'partNumber']
   
+  cutDescription(description: string) {
+    return description.substring(0, 100)
+  }
+
+  getProducts() {
+    for(let product of this.productsList) {
+      product.description = this.cutDescription(product.description)
+    }
+  }
+
+  ngOnInit(): void {
+    this.productsList = products
+    this.getProducts()
+  }
 }
