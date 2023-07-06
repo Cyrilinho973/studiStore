@@ -1,3 +1,7 @@
+.welcomeContainer {
+  background-color: azure;
+}
+
 .welcomeText {
   margin-left: 250px;
   height:40px;
@@ -13,4 +17,8 @@
 .welcomeMenu {
   margin-top: 10px;
   margin-left: 20px;
+}
+
+mat-nav-list {
+  display: flex;
 }
