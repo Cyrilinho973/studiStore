@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <div class="welcomeContainer">
   <div class="welcomeLogo">
-    <img src="../../assets/images/welcome.jpeg" height="100px" width="200px" alt="">
+    <a href="/"><img src="../../assets/images/welcome/welcome.jpeg" height="100px" width="200px" alt=""></a>
   </div>
   <div class="welcomeText">
     <h1>Welcome to the best tools store</h1>
   </div>
   <div class="welcomeMenu">
-    <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-      <mat-button-toggle value="products">Products</mat-button-toggle>
-      <mat-button-toggle value="contact">Contact</mat-button-toggle>
-      <mat-button-toggle value="sign-in">Sign-in</mat-button-toggle>
-    </mat-button-toggle-group>
+    <mat-nav-list>
+      <div><a mat-list-item href="/products">Products</a></div>
+      <div><a mat-list-item href="/contact">Contact</a></div>
+      <div><a mat-list-item href="/signup">SignUp</a></div>
+    </mat-nav-list>
   </div>
 </div>
